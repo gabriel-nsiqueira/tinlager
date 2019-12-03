@@ -25,6 +25,12 @@ const styles = StyleSheet.create({
 		shadowRadius: 2,
 		backgroundColor: 'white'
 	},
+	Container: {
+		display: 'flex',
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center'
+	},
 	footer: {
 		flexDirection: 'row',
 		justifyContent: 'space-evenly',
@@ -49,6 +55,9 @@ const styles = StyleSheet.create({
 		position: 'absolute',
 		padding: 20,
 		fontWeight: 'bold'
+	},
+	txt: {
+		fontFamily: 'Solway'
 	}
 });
 
@@ -58,7 +67,11 @@ export default class Buy extends Component {
 	}
 
 	renderBuy = () => {
-		return <View />;
+		return (
+			<View style={styles.Container}>
+				<Text styles={styles.txt}>Você não precisa de esmeraldas, porque você é admin</Text>
+			</View>
+		);
 	};
 
 	static navigationOptions = {

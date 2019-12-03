@@ -35,7 +35,6 @@ export default class SignIn extends React.Component {
 					email: this.state.email,
 					password: this.state.password
 				});
-				// alert(1);
 
 				const resetAction = StackActions.reset({
 					index: 0,

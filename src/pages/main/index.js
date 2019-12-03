@@ -76,6 +76,9 @@ export default class App extends React.Component {
       }),
     }).isRequired,
   };
+  state = {
+    isReady: false,
+  };
 
   constructor() {
     super();
